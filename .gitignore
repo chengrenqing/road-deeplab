@@ -1,0 +1,4 @@
+#ingore file
+*.pyc
+#ingore file folder
+datasets/pascal_voc_seg/
