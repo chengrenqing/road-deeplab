@@ -73,9 +73,9 @@ cd "${CURRENT_DIR}"
 PASCAL_DATASET="${WORK_DIR}/${DATASET_DIR}/${PASCAL_FOLDER}/tfrecord"
 
 IS_TRAIN="false"
-IS_VAL="true"
+IS_VAL="false"
 IS_VIS="false"
-IS_EXPO="false"
+IS_EXPO="true"
 
 # Train 10 iterations.
 if [ "$IS_TRAIN" = "true" ] ; then
@@ -123,6 +123,7 @@ if [ "$IS_VIS" = "true" ];then
       --max_number_of_iterations=1
 fi
 # Export the trained checkpoint.
+NUM_ITERATIONS=81277
 CKPT_PATH="${TRAIN_LOGDIR}/model.ckpt-${NUM_ITERATIONS}"
 EXPORT_PATH="${EXPORT_DIR}/frozen_inference_graph.pb"
 

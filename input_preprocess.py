@@ -66,7 +66,7 @@ def preprocess_image_and_label(image,
   Raises:
     ValueError: Ground truth label not provided during training.
   """
-  print tf.shape(image),tf.shape(label)
+  #print tf.shape(image),tf.shape(label)
   if is_training and label is None:
     raise ValueError('During training, label must be provided.')
   if model_variant is None:
