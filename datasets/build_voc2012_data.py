@@ -133,8 +133,9 @@ def _convert_dataset(dataset_split):
 
 def main(unused_argv):
   dataset_splits = tf.gfile.Glob(os.path.join(FLAGS.list_folder, '*.txt'))
-  for dataset_split in dataset_splits:
-    _convert_dataset(dataset_split)
+  #for dataset_split in dataset_splits:
+      #_convert_dataset(dataset_split)
+  _convert_dataset('./pascal_voc_seg/VOCdevkit/VOC2012/ImageSets/Segmentation/val.txt')
 
 
 if __name__ == '__main__':

@@ -54,6 +54,8 @@ echo "Removing the color map in ground truth annotations..."
 #  --original_gt_folder="${SEG_FOLDER}" \
 #  --output_dir="${SEMANTIC_SEG_FOLDER}"
 
+# resize val image for inference
+#python ./resize_val_image.py
 # Build TFRecords of the dataset.
 # First, create output directory for storing TFRecords.
 OUTPUT_DIR="${WORK_DIR}/tfrecord"
