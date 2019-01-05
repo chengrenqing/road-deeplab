@@ -73,9 +73,9 @@ cd "${CURRENT_DIR}"
 PASCAL_DATASET="${WORK_DIR}/${DATASET_DIR}/${PASCAL_FOLDER}/tfrecord"
 
 IS_TRAIN="false"
-IS_VAL="false"
+IS_VAL="true"
 IS_VIS="false"
-IS_EXPO="true"
+IS_EXPO="false"
 
 # Train 10 iterations.
 if [ "$IS_TRAIN" = "true" ] ; then

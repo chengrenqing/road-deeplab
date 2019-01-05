@@ -90,7 +90,7 @@ _PASCAL_VOC_SEG_INFORMATION = DatasetDescriptor(
     splits_to_sizes={
         'train': 7700,
         'trainval': 9630,
-        'val': 193,
+        'val': 1930,
     },
     num_classes=2,
     ignore_label=255,
